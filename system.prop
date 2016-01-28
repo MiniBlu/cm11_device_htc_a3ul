@@ -1,0 +1,133 @@
+# system.prop for a3ul
+
+# Radio
+rild.libpath=/vendor/lib/libril-qc-qmi-1.so
+rild.libargs=-d /dev/smd0
+persist.rild.nitz_plmn=
+persist.rild.nitz_long_ons_0=
+persist.rild.nitz_long_ons_1=
+persist.rild.nitz_long_ons_2=
+persist.rild.nitz_long_ons_3=
+persist.rild.nitz_short_ons_0=
+persist.rild.nitz_short_ons_1=
+persist.rild.nitz_short_ons_2=
+persist.rild.nitz_short_ons_3=
+ril.subscription.types=NV,RUIM
+DEVICE_PROVISIONED=1
+ro.telephony.default_network=9
+ro.baseband.arch=msm
+persist.radio.jbims=1
+persist.rmnet.mux=enabled
+persist.data.iwlan.enable=true
+ro.baseband.arch=msm
+persist.radio.jbims=1
+persist.rmnet.mux=enabled
+persist.data.iwlan.enable=true
+
+# Display Info
+ro.product.display_resolution = 4.7 inch qhd resolution
+
+# Camera Info
+ro.product.main_camera = 8M
+ro.product.front_camera = 1.3M
+
+# system props for the cne module
+persist.cne.feature=0
+
+# GPS
+persist.gps.qc_nlp_in_use=0
+ro.gps.agps_provider=1
+ro.ril.def.agps.mode=2
+ro.ril.def.agps.feature=1
+
+# Graphics
+debug.composition.type=dyn
+debug.egl.hw=1
+debug.mdpcomp.logs=0
+debug.sf.hw=1
+dev.pm.dyn_samplingrate=1
+persist.hwc.mdpcomp.enable=true
+ro.sf.lcd_density=240
+ro.opengles.version=196608
+
+# Input
+ro.input.noresample=1
+
+# Media
+mm.enable.smoothstreaming=true
+
+# QCOM
+com.qc.hardware=true
+persist.thermal.monitor=true
+ro.vendor.extension_library=/vendor/lib/libqc-opt.so
+
+# system props for the data modules
+ro.use_data_netmgrd=true
+persist.data.netmgrd.qos.enable=true
+ro.data.large_tcp_window_size=true
+
+#system props for time-services
+persist.timed.enable=true
+
+# System props for audio
+# System props for soundhound
+persist.htc.audio.pcm.samplerate=48000
+persist.htc.audio.pcm.channels=2
+
+# System prop to select audio resampler quality
+af.resampler.quality=4
+
+#Buffer size in kbytes for compress offload playback
+audio.offload.buffer.size.kb=1024
+
+#Enable offload gapless
+audio.offload.gapless.enabled=true
+
+# System props for global effect
+htc.audio.global.state=0
+htc.audio.global.profile=0
+htc.audio.q6.topology=0
+htc.audio.global.speaker=1
+htc.audio.srs.defaultbundleHS=HS250
+
+# System props for skip fast output
+htc.audio.skiplowlatency=7
+
+# System props for ALT feature
+htc.audio.swalt.enable=1
+htc.audio.swalt.mingain=16384
+
+# System props for AOLC feature
+htc.audio.alc.enable=1
+htc.alc.ALC_THRESHOLD=46152
+htc.alc.SAMPLE_THRESHOLD=9823
+htc.alc.PAGE_THRESHOLD=256
+htc.alc.MAX_ACL_ATT=26
+htc.alc.STRESS_THRESHOLD=40
+htc.alc.BURSTWEIGHT_SHIFT=3
+htc.alc.NORMAL_THRESHOLD=24
+htc.alc.NORMAL_BURST_THRESHOLD=8
+htc.alc.STRESS_BURST_THRESHOLD=8
+
+# USB
+persist.sys.usb.config=mtp
+
+#snapdragon value add features
+ro.qc.sdk.audio.ssr=false
+##fluencetype can be "fluence" or "fluencepro" or "none"
+ro.qc.sdk.audio.fluencetype=none
+ro.qc.sdk.sensors.gestures=true
+ro.qc.sdk.camera.facialproc=false
+
+
+# A3 HW info
+ro.product.ram = 1GB
+
+
+# For Embadded DIAG
+ro.chipset.vendor=QCT
+ro.chipset.model=MSM8x26
+ro.chipset.version=1.x
+
+# Wifi
+wifi.interface=wlan0
